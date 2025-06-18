@@ -1,0 +1,6 @@
+total 20
+4 drwxr-xr-x  5 root       root       4096 Jun 18 17:33 .
+4 drwxr-xr-x 18 root       root       4096 May 13 01:17 ..
+4 drwx------  2 liza       liza       4096 Jun 18 15:07 liza
+4 drwxr-xr-x  2 lizahamadi lizahamadi 4096 Jun 18 17:33 lizahamadi
+4 drwx------ 15 pi         pi         4096 Jun 18 17:35 pi

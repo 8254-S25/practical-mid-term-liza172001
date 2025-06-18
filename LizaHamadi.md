@@ -3,7 +3,8 @@
 **Your Name:**
 
 ```
-
+Liza Hamadi
+041180878
 ```
 
 Answer directly in this .md file.
@@ -42,11 +43,11 @@ On your laptop, in any folder, create a text file whose name is the concatenatio
 Make sure your Pi is connected on your home network.
 
 Using ``scp`` , send a copy of the file to your raspberry pi in the home folder. **What command did you use?**
-
+s
 **1.**
 
 ```
-
+cp C:\Users\lizah\OneDrive\Documents\College\LizaHamadi.txt 
 ```
 
 Open a **`putty/ssh`** session to your raspberry pi .
@@ -54,7 +55,7 @@ Open a **`putty/ssh`** session to your raspberry pi .
 **2. What command do you use to see a directory listing that includes the permissions of the files?**
 
 ```
-
+ls -l
 ```
 
 Redo the last command and save the output of the command to a file **`pr1.txt`**. **What command did you use?**
@@ -62,19 +63,19 @@ Redo the last command and save the output of the command to a file **`pr1.txt`**
 **3.**
 
 ```
-
+ls -l > pr1.txt
 ```
 
 **4. What are the permissions of the file you just created?**
 
 ```
-
+-rw-r--r-- 1 pi pi 516 Jun 18 17:02 pr1.txt
 ```
 
 **5. What command do you use to display the folder you are currently working from?**
 
 ```
-
+pwd
 ```
 
 Change the permissions of the file so that group members can only execute it. **What command did you use?** 
@@ -82,6 +83,7 @@ Change the permissions of the file so that group members can only execute it. **
 **6.**
 
 ```
+chmod 010 pr1.txt
 
 ```
 
@@ -90,18 +92,19 @@ Create a folder **`midtermExam-SectionNumber`** under the current working direct
 **7.**
 
 ```
-
+mkdir midtermExam-301
 ```
 
 **8. What are the permissions of this new folder  ?**
 
 ```
-
+drwxr-xr-x 2 pi pi 4096 Jun 18 17:09 midtermExam-301
 ```
 
 **9. What command do you use to list the ports your raspberry pi is listening to? Try it using the `-at` flag.**
 
 ```
+netstat -at
 
 ```
 
@@ -110,6 +113,7 @@ Redo the last command saving the output of the command to a file **`pr2.txt `**.
 **10.**
 
 ```
+netstat -at > pr2.txt
 
 ```
 
@@ -120,6 +124,7 @@ From the command line start a sFTP session to your raspberry PI . **What command
 **11.**
 
 ```
+sftp pi@<your_pi_ip>
 
 ```
 
@@ -128,6 +133,7 @@ Copy the file **`midtermPi.txt`** to your PI using sFtp. **What command did you 
 **12.**
 
 ```
+put C:\Users\lizah\OneDrive\Documents\College\midtermPi.txt
 
 ```
 
@@ -140,7 +146,7 @@ pwd>mt.txt;tree -l>>pr.txt
 **13.** What does the command do?
 
 ```
-
+Writes the current working directory to mt.txt and appends a directory tree listing to pr.txt
 ```
 
 Using `useradd`, create a user named after you using the concatenation of your firstname and last name. **What command did you use?**
@@ -148,7 +154,7 @@ Using `useradd`, create a user named after you using the concatenation of your f
 **14.**
 
 ```
-
+sudo useradd -m yourfirstnamelastname
 ```
 
 Create the home directory for the user you just created and change the ownership of this folder to the user himself/herself. **What commands did you use?**
@@ -156,6 +162,8 @@ Create the home directory for the user you just created and change the ownership
  **15.**
 
 ```
+sudo mkdir /home/lizahamadi
+sudo chown lizahamadi:lizahamadi /home/lizahamadi
 
 ```
 
@@ -164,6 +172,8 @@ Update your PI package list using `apt-get` , then use `apt-get` to install `Fil
 **16.**
 
 ```
+sudo apt-get update
+sudo apt-get install filezilla
 
 ```
 
@@ -186,7 +196,7 @@ Install the following packages on your Pi using `apt-get`. Install them in the f
    ```
    sudo mysql
    
-   CREATE USER 'pi'@'localhost' IDENTIFIED BY 'password';
+   CREATE USER 'pi'@'localhost' IDENTIFIED BY 'p';
    
    GRANT ALL PRIVILEGES ON * . * TO 'pi'@'localhost';
    

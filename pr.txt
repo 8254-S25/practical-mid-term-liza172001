@@ -1,0 +1,21 @@
+.
+├── Bookshelf
+│   └── BeginnersGuide-5thEd-Eng_v4.pdf
+├── Desktop
+├── Documents
+├── Downloads
+├── LizaHamadi.txt
+├── midtermExam-301
+├── midtermPi.txt
+├── mt.txt
+├── Music
+├── Pictures
+├── pr1.txt
+├── pr2.txt
+├── pr.txt
+├── Public
+├── ssh
+├── Templates
+└── Videos
+
+11 directories, 8 files

@@ -1,0 +1,2 @@
+lizahamadi:x:1002:1002::/home/lizahamadi:/bin/bash
+mysql:x:111:123:MySQL Server,,,:/nonexistent:/bin/false

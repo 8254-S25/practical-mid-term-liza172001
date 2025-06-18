@@ -1,0 +1,13 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp        0      0 lizapi.tailbabc05:43683 0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:ipp           0.0.0.0:*               LISTEN     
+tcp        0      0 lizapi.ht.home:52710    ec2-54-161-152-14:https ESTABLISHED
+tcp        0     52 lizapi.tailbabc05.t:ssh p.tailbabc05.ts.n:50174 ESTABLISHED
+tcp        0      0 lizapi.ht.home:54294    ec2-18-194-180-142:http ESTABLISHED
+tcp        0      0 lizapi.ht.home:33370    static.233.218.16:https ESTABLISHED
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+tcp6       0      0 fd7a:115c:a1e0::a:59054 [::]:*                  LISTEN     
+tcp6       0      0 localhost:ipp           [::]:*                  LISTEN     
+tcp6       0      0 [::]:5900               [::]:*                  LISTEN     
